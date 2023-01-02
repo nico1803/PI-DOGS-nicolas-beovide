@@ -1,0 +1,195 @@
+.GlobalContainer{
+display: flex;
+background-color: #fff4ec;
+flex-direction: column;
+}
+.IconPgn{
+width: 100%;
+height: 100%;
+border-radius: 15px;
+color: #4f4f4f;
+transition: all 0.4s 0s ease;
+}
+.IconPgn:hover{
+color: white;
+}
+.GlobalHomeContainer{
+display: flex;
+background-color: #fff4ec;
+flex-direction: column;
+}
+.Header{
+display: flex;
+padding-top: 3vh;
+}
+.Pagination{
+display: flex;
+align-self: center;
+width: 56vw;
+justify-content: flex-end;
+margin-right: 20vw;
+}
+.PaginationButton{
+display: flex;
+appearance: none;
+background-color: transparent;
+border: 2px solid #4f4f4f;
+border-radius: 15px;
+cursor: pointer;
+margin: 3px;
+min-height: 60px;
+min-width: 80px;
+outline: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+.PaginationButton:hover{
+    color: #fff;
+    background-color: #4f4f4f;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+.PaginationButton:active{
+    box-shadow: none;
+    transform: translateY(0);
+}
+.FilterContainer{
+display: flex;
+margin-top: .5vh;
+}
+.HomeBody{
+display: flex;
+}
+.Form{
+display: flex;
+width: 15.2vw;
+height: 6vh;
+}
+.OptionsContainer{
+align-items: flex-end;
+flex-direction: column;
+display: flex;
+width: 25vw;
+height: 70vh;
+padding-top: 10vh;
+}
+.HomeCardsContainer{
+display: flex;
+width: 75vw;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+transition: all 0.4s 0s ease;
+}
+.SearchBar{
+display: flex;
+background: transparent;
+padding: 0% 4%;
+border-radius: 4px;
+width: 100%;
+height: 6vh;
+font-size: 17px;
+box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+border: 2px solid #4f4f4f;
+margin-left: 0;
+}
+.SearchBar::placeholder{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    opacity: 3;
+}
+.SearchBar:hover{
+    border: 2px solid #000;
+}
+.CreateText{
+font-family: 'Ubuntu', sans-serif;
+font-size: 25px;
+display: flex;
+color: #4f4f4f;
+}
+.CreateDog{
+appearance: none;
+color: #4f4f4f;
+background-color: transparent;
+border: 2px solid #4f4f4f;
+border-radius: 15px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+outline: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+font-size: 23px;
+width: 15vw;
+height: 6vh;
+margin-top: 5vh;
+text-align: center;
+align-items: center;
+}
+.CreateDog:hover{
+    color: #fff;
+    background-color: #4f4f4f;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+.CreateDog:active{
+    box-shadow: none;
+    transform: translateY(0);
+    color: #fff;
+}
+.CreateDog:hover>.CreateText{
+    color: #fff;
+}
+/*========================================== media queries ==========================================*/
+@media screen and (max-width: 1100px) {
+    .Header{
+        justify-content: center;
+        width: 100%;
+        flex-direction: row-reverse;
+        padding: 1rem;
+    }
+    .Pagination{
+        width: 45vw;
+        margin-right: 14vw;
+    }
+}
+@media screen and (max-width: 850px) {
+    .Form{
+        width: 85%;
+        align-self: center;
+    }
+    .CreateDog{
+        width: 85%;
+        align-self: cente
+    }
+}
+@media screen and (max-width: 650px) {
+    .Header{
+        width: 100%;
+        flex-direction: row-reverse;
+        padding: 1rem;
+    }
+    .Pagination{
+        width: 40vw;
+        justify-content: center;
+        margin-right: 30vw;
+        margin-left: 10vw;
+    }
+    .HomeBody{
+        flex-direction: column;
+    }
+    .OptionsContainer{
+        width: 100%;
+        flex-direction: row;
+        padding: 0;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+    }
+    .HomeCardsContainer{
+        width: 100%;
+    }
+    .SearchBar{
+        margin: 0;
+        padding: 0;
+        width: 30vw;
+    }
+}

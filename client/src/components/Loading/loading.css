@@ -1,0 +1,23 @@
+
+.loadingGif {
+background-color: #fff4ec;
+display: flex;
+justify-content: center;
+flex-direction: column;
+z-index: 10;
+height: 100vh;
+width: 100vw;
+}
+.LoadingIcon {
+align-self: center;
+display: flex;
+width: 500px;
+height: auto;
+margin-top: 5vh;
+}
+.P{
+align-self: center;
+display: flex;
+width: 300px;
+height: auto;
+}

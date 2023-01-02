@@ -1,0 +1,147 @@
+.CardContainerC{
+display: flex;
+flex-direction: column;
+width: 260px;
+height: 350px;
+margin: 30px 15px;
+border: none;
+border-radius: 12px;
+align-items: center;
+text-decoration: none;
+background-color: #fff;
+box-shadow: 0 3px 7px rgb(0 0 0 / 20%);
+transition: all 0.4s 0s ease;
+}
+.CardContainerC:hover{
+        transform: scale(1.09);
+        box-shadow: 0 5px 10px rgb(0 0 0 / 50%);
+        filter: saturate(1.5);
+        cursor: pointer;
+}
+.CardContainerC:hover>.DogNameC{
+    text-shadow: 1px 2px 4px rgb(0 0 0 / 40%);
+    color: #000;
+}
+.CardContainerC:hover>.TemperamentDivC{
+    box-shadow: 0 5px 8px rgb(0 0 0 / 40%);
+    color: #000;
+    background-color: #dbdbdb;
+}
+.DogNameC{
+font-family: 'Ubuntu', sans-serif;
+color: #2e2e2c;
+font-size: 18px;
+margin-top: 3px;
+display: flex;
+align-self: center;
+text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+}
+
+.CardImageC{
+object-fit: cover;
+height: 60%;
+width: 100%;
+border-radius: 12px;
+}
+
+.TemperamentDivC{
+font-family: 'Ubuntu', sans-serif;
+font-size: 15px;
+font-weight: 400;
+border: none;
+padding: 4px 8px;
+margin: 3px 3px;
+border-radius: 15px;
+height: 22px;
+width: max-content;
+background-color: #e6e6e6;
+box-shadow: 0 2px 5px rgb(1 1 1 / 30%);
+transition: all 0.4s 0s ease;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+.TempContainerC{
+color: #2e2e2c;
+margin: 6px;
+height: 24%;
+width: 90%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+transition: all 0.4s 0s ease;
+}
+.WeightC{
+font-family: 'Ubuntu', sans-serif;
+color: #2e2e2c;
+margin-top: 3px;
+font-size: 15px;
+display: flex;
+align-self: center;
+text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+}
+
+/*========================================== media queries ==========================================*/
+@media screen and (max-width: 900px) {
+    .DogNameC{
+        font-size: 15px;
+    }
+    .TemperamentDivC{
+        font-size: 13px;
+        padding: 6px 6px;
+        margin: 2px 2px;
+        height: max-content;
+    }
+    .TempContainerC{
+        height: 22%;
+        width: 95%;
+    }
+    .WeightC{
+        margin-top: 4px;
+        font-size: 13px;
+    }
+    .CardContainerC{
+        width: 230px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .TemperamentDivC{
+        font-size: 11px;
+        padding: 4px 6px;
+        margin: 2px 2px;
+        height: max-content;
+    }
+    .TempContainerC{
+        height: 22%;
+        width: 100%;
+    }
+    .WeightC{
+        margin-top: 3px;
+        font-size: 11px;
+    }
+    .CardContainerC{
+        width: 200px;
+        height: 260px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .TemperamentDivC{
+        padding: 4px 6px;
+        margin: 2px 2px;
+        height: max-content;
+    }
+    .TempContainerC{
+        height: 23%;
+        width: 100%;
+    }
+    .WeightC{
+        margin-top: 2px;
+    }
+    .CardContainerC{
+        width: 200px;
+        height: 250px;
+    }
+}

@@ -1,0 +1,138 @@
+.GlobalContainerL{
+    display: flex;
+flex-direction: column;
+height: 100vh;
+background: url('https://img.freepik.com/vector-gratis/fondo-rosa-estetico-vector-diseno-perro-arte-lineal_53876-151374.jpg?w=2000');
+background-repeat: no-repeat;
+background-position: left;
+background-size: cover; 
+transition: all 0.4s 0s ease;
+}
+.LandingContainerL{
+display: flex;
+align-items: center;
+height: 100vh;
+}
+.ContactButtonsL{
+display: flex;
+flex-direction: column;
+width: fit-content;
+height: 30vh;
+justify-content: space-around;
+justify-self: center;
+margin-left: 3vw;
+padding: .2vw;
+}
+.LandingTextDivL{
+display: flex;
+flex-direction: column;
+margin-left: 5vw;
+}
+.BtnL{
+font-family: 'Ubuntu', sans-serif;
+display: flex;
+color: #dedede;
+text-decoration: none;
+border: none;
+border-radius: 30px;
+font-size: 1rem;
+margin: .5vw;
+padding: 8px 45px;
+background-color: #ff4000;
+background-repeat: no-repeat;
+box-shadow: 4px 3px 15px #7a1f00;
+transition: all 400ms cubic-bezier(.23, 1, 0.32, 1);
+}
+.BtnL:hover{
+    cursor: pointer;
+    box-shadow: 9px 8px 17px #7a1f00;
+    color: #fff;
+    transform: scale(1.05);
+}
+.LandingPreSloganL{
+display: flex;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.8rem;
+margin: .5vw;
+transition: all 0.4s 0s ease;
+text-shadow: 5px 10px 15px rgb(0 0 0 / 20%);
+cursor: default;
+}
+.LPL{
+    color: #ff4000;
+    transition: all 0.4s 0s ease;
+    font-size:larger;
+}
+.LandingSloganL{
+font-family: 'Work Sans', sans-serif;
+font-weight: 900;
+margin: .5vw;
+font-size: 6rem;
+color: #000;
+cursor: default;
+text-shadow: 5px 10px 15px rgb(0 0 0 / 20%);
+}
+.iconLINK{
+display: flex;
+color: #000;
+transition: all 250ms cubic-bezier(.13, .5, 0.12, .5);
+}
+.iconLINK:hover{
+    transform: scale(1.2);
+}
+.iconGIT{
+display: flex;
+color: #000;
+transition: all 250ms cubic-bezier(.13, .5, 0.12, .5);
+}
+.iconGIT:hover{
+    transform: scale(1.2);
+}
+/*========================================== media queries ==========================================*/
+
+@media screen and (max-width: 1000px) {
+    .GlobalContainerL{
+        background-position: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .LandingSloganL{
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .BtnL{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .LandingSloganL{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .LandingContainerL{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: .1rem;
+    }
+    .ContactButtonsL{
+        flex-direction: row;
+        height: max-content;
+        width: 30vw;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    .LandingSloganL{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .BtnL{
+        font-size: .7rem;
+    }
+    .LandingSloganL{
+        font-size: 2.5rem;
+    }
+}
