@@ -54,7 +54,7 @@ app.get('/dogs', async(req, res, next)=>{
         const name = req.query.name; // name por query
         let allDogs = await getAllDogs();
         if (!name){// si la query.name no existe devuelve toda la info necesaria para /dogs
-            res.status(200).send(allDogs)     
+            res.status(200).send(allDogs)   
         } else { //si existe query.name pasa a buscar
             let dogName = await allDogs.filter((dog) => dog.name.toLowerCase().includes(name.toLowerCase()))
             dogName.length ?
@@ -81,6 +81,8 @@ app.get('/dogs/:id', async function(req, res, next){
         next(err)
     };
 });
+
+
 
 app.post('/dogs/create', async (req,res,next)=>{
       let {name, height, weight, age, temperaments, image} = req.body //destructuring m1
